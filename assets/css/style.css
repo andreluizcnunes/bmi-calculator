@@ -11,15 +11,24 @@
     outline: none;
 }
 
-body {
+/* body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #F8F9F9;
+} */
+
+body {
+  max-width: 1360px; /* aqui eu limito o tamanho da minha aplicação */
+  margin: 0 auto; /* se a tela passar de 1360px minha aplicação fica no meio da tela */
+  height: 100vh; /* aqui eu eu faço com que minha aplicação pegue o tamanho total da tela */
+  background-color: rgba(220, 221, 221, 0.502);
+  display: flex; /* usando somente para alinha minha section ao centro na vertical */
+  align-items: center; /* centralizando a section na vertical*/
 }
 
-.bmi-container {
+/* .bmi-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,6 +37,22 @@ body {
     min-height: auto;
     border-radius: 10px;
     background-color: #EBDEF0;
+} */
+
+/* aqui eu tirei o itens
+margin-top, ajustei o width, ajustei o height  
+por que fiz isso para manter sua aplicação centralizada na tela
+*/
+
+.bmi-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto; /* centralizando aplicação */
+  width: 80vw; /* colocando uma limitação de 80% da tela na horizontal */
+  height: 80vh; /* colocando uma limitação de 80% da tela na vertical */
+  border-radius: 10px;
+  background-color: #ebdef0;
 }
 
 .bmi-container-content {
